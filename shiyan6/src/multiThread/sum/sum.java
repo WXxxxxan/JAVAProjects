@@ -17,12 +17,15 @@ public class sum {
 			threada.start();
 			threada.join();
 			sum+=test1.returnNum();
+			System.out.println(sum);
 			threadb.start();
 			threadb.join();
 			sum+=test2.returnNum();
+			System.out.println(sum);
 			threadc.start();
 			threadc.join();
 			sum+=test3.returnNum();
+			System.out.println(sum);
 			threadd.start();
 			threadd.join();
 			sum+=test4.returnNum();
